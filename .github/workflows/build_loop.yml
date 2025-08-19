@@ -283,7 +283,7 @@ jobs:
           # August 19, 2025 - Thomas Nichol
           # Description: Modify DIA for Novolog insulin from 360 to 300 minutes
           # Module: LoopKit File: ExponentialInsulinModelPreset.swift  
-          curl https://github.com/tnichol00-org/LoopKit/commit/d1c4d064c9c920632ffc2c4fb1d39bb8b9fa83aa.patch | git apply -v --directory=LoopKit
+          curl https://github.com/tnichol00-org/LoopKit/commit/d1c4d064c9c920632ffc2c4fb1d39bb8b9fa83aa.patch | git apply --directory=LoopKit -v --whitespace=fix
           
           # Add patches for customization of additional submodules by following the templates above, 
           # and make sure to specify the submodule by setting "--directory=(submodule_name)".
