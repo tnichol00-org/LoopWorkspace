@@ -297,6 +297,9 @@ jobs:
            # Apply this fifth change, which sets the Novolog DIA to 180 minutes, and peakactivity to 60
           curl https://github.com/tnichol00-org/LoopKit/commit/132b0866c3ef815b4101870a4998269f33673a28.patch | git apply --directory=LoopKit -v --whitespace=fix
 
+           # Apply this next change, which resets novolog's peakactivity back to the default of 75
+          curl https://github.com/tnichol00-org/LoopKit/commit/d1e006f2836d6c25ed48648353628ebe4d9e1ed6.patch | git apply --directory=LoopKit -v --whitespace=fix
+
 
           # Add patches for customization of additional submodules by following the templates above, 
           # and make sure to specify the submodule by setting "--directory=(submodule_name)".
